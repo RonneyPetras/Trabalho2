@@ -7,12 +7,12 @@ import java.util.Scanner;
 public class Main {
 	public static void main(String[] args) {
 		
-		String arquivo = "J://Gdrive//IFTM//Linguagem de ProgramaÁ„o//workspace//Trabalho2//01.txt";
-		try {
-			System.setIn(new FileInputStream(new File(arquivo)));
-		} catch (FileNotFoundException e) {
-			System.out.println("Arquivo n„o encontrado");
-		}
+	//	String arquivo = "J://Gdrive//IFTM//Linguagem de Programa√ß√£o//workspace//Trabalho2//01.txt";
+	//	try {
+	//		System.setIn(new FileInputStream(new File(arquivo)));
+	//	} catch (FileNotFoundException e) {
+	//		System.out.println("Arquivo n√£o encontrado");
+	//	}
 		
 		Scanner sc = new Scanner(System.in);
 		sc.useLocale(Locale.ENGLISH);
@@ -37,7 +37,7 @@ public class Main {
 			valor[], 
 			preco[][]; //Preco do pacote inicial e alem da franquia
 		
-		System.out.println("Quantos clientes ser„o informados?: ");
+		System.out.println("Quantos clientes ser√£o informados?: ");
 		n=sc.nextInt();
 		
 		nome=new String[n];
@@ -50,7 +50,7 @@ public class Main {
 		//input dos dados do usuario
 		
 		for (i=0;i<n;i++) {
-			System.out.println("Informe o "+(i+1)+"∫ nome?: ");
+			System.out.println("Informe o "+(i+1)+"¬∫ nome?: ");
 			nome[i]=sc.next();
 			System.out.println("Informe o telefone?: ");
 			telefone[i]=sc.next();
@@ -63,11 +63,11 @@ public class Main {
 		for (i=0; i<3; i++) {
 			for(j=0; j<2; j++) {
 				if(j==1) {
-					System.out.println("Informe o preÁo adicional do tipo "+(i+1)+": ");
+					System.out.println("Informe o pre√ßo adicional do tipo "+(i+1)+": ");
 					preco[i][j]=sc.nextDouble();
 				}
 				else{	
-					System.out.println("Informe o preÁo do tipo "+(i+1)+": ");
+					System.out.println("Informe o pre√ßo do tipo "+(i+1)+": ");
 					preco[i][j]=sc.nextDouble();
 				}	
 			}
@@ -121,11 +121,11 @@ public class Main {
 			}
 		}
 		System.out.println("");
-		System.out.printf("Media dos minutos dos clientes 1 È: %.1f\n",total/j);
+		System.out.printf("Media dos minutos dos clientes 1 √©: %.1f\n",total/j);
 		System.out.println("");
 		
-		//clientes que n„o consumiram minutos excedentes
-		System.out.println("Clientes que n„o consumiram minutos excedentes: ");
+		//clientes que n√£o consumiram minutos excedentes
+		System.out.println("Clientes que n√£o consumiram minutos excedentes: ");
 		for(i=0; i<n; i++) {
 			if(minutos[i]<=90){
 				System.out.println(nome[i]+": "+telefone[i]);
